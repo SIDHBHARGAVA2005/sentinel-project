@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+dnspython
+python-dotenv
+requests
+cryptography
