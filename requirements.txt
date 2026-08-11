@@ -1,6 +1,10 @@
 fastapi
 uvicorn[standard]
-dnspython
+sqlalchemy
+aiosqlite
+pydantic
+pydantic-settings
+httpx
 python-dotenv
-requests
-cryptography
+asyncpg
+openai
