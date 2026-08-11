@@ -1,0 +1,86 @@
+Folder PATH listing for volume OS
+Volume serial number is 486D-9319
+C:.
+|   docker-compose.yml
+|   generate_pdf.py
+|   README.md
+|   sentinel_setup_guide.pdf
+|   tree.txt
+|   
++---backend
+|   |   .env.example
+|   |   Dockerfile
+|   |   requirements.txt
+|   |   
+|   +---agents
+|   |       analyst_agent.py
+|   |       oracle_agent.py
+|   |       scout_agent.py
+|   |       __init__.py
+|   |       
+|   +---api
+|   |       routes.py
+|   |       __init__.py
+|   |       
+|   +---core
+|   |       config.py
+|   |       __init__.py
+|   |       
+|   +---db
+|   |       database.py
+|   |       __init__.py
+|   |       
+|   \---models
+|           asset.py
+|           report.py
+|           scan.py
+|           vulnerability.py
+|           __init__.py
+|           
++---docker
++---frontend
+|   |   Dockerfile
+|   |   index.html
+|   |   nginx.conf
+|   |   package.json
+|   |   postcss.config.js
+|   |   tailwind.config.js
+|   |   vite.config.js
+|   |   
+|   \---src
+|       |   App.jsx
+|       |   index.css
+|       |   main.jsx
+|       |   
+|       +---components
+|       |   |   Sidebar.jsx
+|       |   |   Topbar.jsx
+|       |   |   
+|       |   +---charts
+|       |   |       AssetTypeChart.jsx
+|       |   |       SeverityChart.jsx
+|       |   |       
+|       |   \---ui
+|       |           RiskGauge.jsx
+|       |           SeverityBar.jsx
+|       |           StatCard.jsx
+|       |           
+|       +---hooks
+|       +---pages
+|       |       Activity.jsx
+|       |       Assets.jsx
+|       |       Dashboard.jsx
+|       |       Reports.jsx
+|       |       ScanDetail.jsx
+|       |       Scans.jsx
+|       |       Vulnerabilities.jsx
+|       |       
+|       \---utils
+|               api.js
+|               helpers.js
+|               
+\---{backend
+    \---{agents,api,core,models,db},frontend
+        \---src
+            \---{components
+                \---{ui,charts},pages,hooks,utils},docker}
